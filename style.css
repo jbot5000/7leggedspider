@@ -6,9 +6,26 @@ body {
     line-height: 1.3;
 }
 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
 p {
     line-height: 1.5;
     opacity: 0.8;
+}
+
+#phrases:first-child {
+    animation-name: slidein;
+    animation-duration: 0.2s;
 }
 
 blockquote {

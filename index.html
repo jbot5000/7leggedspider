@@ -16,8 +16,10 @@
         <p>When asked about his thoughts on the color light salmon, he responded with:
             <blockquote>I think it's a made up colour (with a u) by folks that cannot accept pink</blockquote>
         </p>
-        <p>Mark Hamill once told a woman she liked anal, without any evidence thereof. He's great fun. You might like him, if you can get past his general Britishness.</p>
-        <button onclick="window.alert(sillyPhrases[Math.floor(Math.random()*sillyPhrases.length)])">Apply Now</button>
+        <p>He's great fun. You might like him, if you can get past his general Britishness.</p>
+        <button onclick="saySillyPhrase(sillyPhrases);">Apply Now</button>
+        <div id="phrases">
+        </div>
         <footer>
             <p>Made with boredom by <a href="http://je553.com">a human, maybe</a>.</p>
         </footer>
@@ -31,6 +33,15 @@
             'I do not have his number, so I cannot give it to you.\nBut if I did, I would. Keep clicking?',
             'If you hate teal, you might get along with Mark. Keep clicking and maybe he\'ll show up at your doorstep with flowers that aren\'t teal.'
         ];
+
+        function saySillyPhrase (phrases) {
+            var oldParagraph = document.getElementById("phrases").childNodes[0];
+            var phraseHolder = document.getElementById("phrases");
+            var newParagraph = document.createElement("p");
+            var newText = document.createTextNode(phrases[Math.floor(Math.random()*phrases.length)]);
+            newParagraph.appendChild(newText);
+            phraseHolder.replaceChild(newParagraph, oldParagraph);
+        }
     </script>
 </body>
 </html>
