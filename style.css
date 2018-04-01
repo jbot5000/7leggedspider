@@ -1,0 +1,121 @@
+body {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: teal;
+    color: #fefefe;
+    line-height: 1.3;
+}
+
+p {
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+blockquote {
+    font-size: 1.5em;
+    color: lightsalmon;
+    font-style: italic;
+    position: relative;
+}
+
+blockquote::before {
+    position: absolute;
+    content: "\201C";
+    font-size: 10em;
+    opacity: 0.05;
+    left: -5rem;
+    top: -4.5rem;
+    color: #fefefe;
+}
+
+.site-container {
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 0.5em 2em;
+}
+
+h1, h2, h3, h4 {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 2em;
+}
+
+h2 { font-size: 1.5em; }
+
+h1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -0.5em;
+    background-color: lightsalmon;
+    width: 1px;
+    height: 100%;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    background-color: #fefefe;
+    color: teal;
+    font-size: 1.5em;
+    letter-spacing: 0.3px;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin: 2rem 0;
+    outline: none;
+    width: 100%;
+}
+
+button:hover {
+    color: lightsalmon;
+}
+
+button:active {
+    border: 1px solid inherit;
+}
+
+footer {
+    padding-top: 4em;
+    font-size: 0.75em;
+}
+
+.hide, .hide:hover, .hide:active, .hide:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: lightsalmon;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -0.5rem;
+    left: 0;
+    height: 1px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+a:hover::after {
+    background-color: #fefefe;
+}
+
+a:active {
+
+}
+
+a:visited {
+    color: orange;
+}
