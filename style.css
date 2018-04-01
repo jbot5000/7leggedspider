@@ -23,7 +23,7 @@ p {
     opacity: 0.8;
 }
 
-#phrases:first-child {
+.phrase {
     animation-name: slidein;
     animation-duration: 0.2s;
 }
@@ -90,6 +90,7 @@ button {
     outline: none;
     width: 100%;
     border: none;
+    cursor: pointer;
 }
 
 button:hover, button:active {

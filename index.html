@@ -38,6 +38,7 @@
             var oldParagraph = document.getElementById("phrases").childNodes[0];
             var phraseHolder = document.getElementById("phrases");
             var newParagraph = document.createElement("p");
+            newParagraph.classList.add("phrase");
             var newText = document.createTextNode(phrases[Math.floor(Math.random()*phrases.length)]);
             newParagraph.appendChild(newText);
             phraseHolder.replaceChild(newParagraph, oldParagraph);
